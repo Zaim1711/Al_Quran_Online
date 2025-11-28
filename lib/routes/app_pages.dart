@@ -1,3 +1,5 @@
+import 'package:al_quran/modules/jadwal_sholat/bindings/jadwal_sholat_binding.dart';
+import 'package:al_quran/modules/jadwal_sholat/views/jadwal_sholat_view.dart';
 import 'package:get/get.dart';
 
 import '../modules/detail_surah/controllers/detail_surah_controller.dart';
@@ -45,6 +47,11 @@ class AppPages {
       name: _Paths.SEARCH_SURAH,
       page: () => SearchSurahView(),
       binding: SearchSurahBinding(),
+    ),
+    GetPage(
+      name: _Paths.JadwalSholatView,
+      page: () => JadwalSholatView(),
+      binding: JadwalSholatBinding(),
     ),
   ];
 }

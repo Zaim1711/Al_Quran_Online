@@ -62,6 +62,11 @@ class _SurahViewState extends State<SurahView> {
             icon: const Icon(Icons.search),
             color: appWhite,
           ),
+          IconButton(
+            onPressed: () => Get.toNamed(Routes.JadwalSholatView),
+            icon: const Icon(Icons.schedule),
+            color: appWhite,
+          ),
         ],
       ),
       body: DefaultTabController(

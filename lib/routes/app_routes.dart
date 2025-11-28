@@ -11,6 +11,7 @@ abstract class Routes {
   static const SEARCH_SURAH = _Paths.SEARCH_SURAH;
   static const JUZ_DETAIL = _Paths.JUZ_DETAIL;
   static const PDF_VIEW_SURAH = _Paths.PDF_VIEW_SURAH;
+  static const JadwalSholatView = _Paths.JadwalSholatView;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const SEARCH_SURAH = '/search-surah';
   static const JUZ_DETAIL = '/juz-detail';
   static const PDF_VIEW_SURAH = '/pdf-view-surah';
+  static const JadwalSholatView = '/jadwal-sholat-view';
 }

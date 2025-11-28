@@ -194,8 +194,8 @@ class DetailSurahController extends GetxController {
   }
 
   @override
-  void onClose() {
-    player.stop();
+  void onClose() async {
+    await player.stop();
     player.dispose();
     super.onClose();
   }
