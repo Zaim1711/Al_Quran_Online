@@ -74,6 +74,4 @@ Aplikasi ini saat ini menggunakan **Data (Kemenag)** untuk daftar Surah dan Ayat
 
 ## 📸 Tampilan Aplikasi (Screenshots)
 
-| Halaman Daftar Surah | Halaman Detail Ayat | Bottom Sheet Pengaturan |
-| :---: | :---: | :---: |
-| ![]) | ![]) | ![]) |
+# ![WebApp](https://github.com/Zaim1711/Al_Quran_Online/blob/main/assets/images/al_quran_poster.png)
