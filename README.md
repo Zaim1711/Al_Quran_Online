@@ -13,7 +13,6 @@ Aplikasi ini dilengkapi dengan serangkaian fitur esensial untuk mendukung kegiat
 * **Transliterasi (Latin):** Opsi untuk menampilkan bacaan Latin guna membantu pengguna dalam pengucapan yang benar.
 * **Tafsir Singkat:** Menyediakan **Tafsir ringkas per ayat** untuk pemahaman cepat konteks dan makna.
 * **Murottal Audio:** Pemutaran audio (**Murottal**) per ayat menggunakan *library* `just_audio`, memungkinkan pengguna mendengarkan bacaan dari Qari terkemuka.
-* **Pengaturan Tampilan Dinamis:** Pengguna memiliki kendali penuh untuk **mengaktifkan atau menonaktifkan** tampilan Latin, Terjemahan, dan Tafsir melalui *bottom sheet* pengaturan yang mudah diakses.
 * **Dukungan Tema (Dark/Light):** Kompatibel penuh dengan **Mode Terang** (*Light Mode*) dan **Mode Gelap** (*Dark Mode*), yang dapat mengikuti preferensi sistem pengguna.
 
 ---
@@ -43,7 +42,7 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini di mesin lokal A
 
 1.  **Clone Repositori:**
     ```bash
-    git clone [URL_REPOSITORI_ANDA]
+    git clone (https://github.com/Zaim1711/Al_Quran_Online.git)
     cd Al_Quran_Online
     ```
 
