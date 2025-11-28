@@ -3,17 +3,21 @@
 Aplikasi **Al-Quran Digital** modern yang dikembangkan menggunakan **Flutter**. Dirancang untuk memberikan pengalaman membaca, mempelajari, dan mendengarkan Al-Quran dengan **antarmuka pengguna (UI) yang bersih, intuitif, dan kaya fitur.**
 
 ---
+[![Flutter Version](https://img.shields.io/badge/Flutter-3.x.x%2B-blue?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
+[![State Management](https://img.shields.io/badge/GetX-State%20Management-purple?style=for-the-badge&logo=dart)](https://pub.dev/packages/get)
+[![License](https://img.shields.io/github/license/Zaim1711/Al_Quran_Online?style=for-the-badge)](LICENSE)
 
 ## ✨ Fitur Utama
 
 Aplikasi ini dilengkapi dengan serangkaian fitur esensial untuk mendukung kegiatan membaca dan memahami Al-Quran:
 
-* **Bacaan Arab Jelas:** Menampilkan teks Al-Quran dalam huruf Arab yang mudah dibaca, dioptimalkan dengan *font* khusus (**Amiri**).
-* **Terjemahan Indonesia:** Menampilkan terjemahan resmi **Bahasa Indonesia** tepat di bawah setiap ayat.
-* **Transliterasi (Latin):** Opsi untuk menampilkan bacaan Latin guna membantu pengguna dalam pengucapan yang benar.
-* **Tafsir Singkat:** Menyediakan **Tafsir ringkas per ayat** untuk pemahaman cepat konteks dan makna.
-* **Murottal Audio:** Pemutaran audio (**Murottal**) per ayat menggunakan *library* `just_audio`, memungkinkan pengguna mendengarkan bacaan dari Qari terkemuka.
-* **Dukungan Tema (Dark/Light):** Kompatibel penuh dengan **Mode Terang** (*Light Mode*) dan **Mode Gelap** (*Dark Mode*), yang dapat mengikuti preferensi sistem pengguna.
+| Ikon | Fitur | Deskripsi |
+| :---: | :--- | :--- |
+| 🔠 | **Bacaan Arab Jelas & Indah** | Menampilkan teks Al-Quran yang mudah dibaca, dioptimalkan menggunakan *font* premium **Amiri**. |
+| 🇮🇩 | **Terjemahan & Tafsir Ringkas** | Terjemahan resmi **Bahasa Indonesia** dan **Tafsir ringkas per ayat** untuk pemahaman cepat konteks dan makna. |
+| 🔉 | **Murottal Audio Per Ayat** | Pemutaran audio Murottal menggunakan `just_audio` per ayat dari Qari terkemuka. |
+| 🌗 | **Dukungan Tema (Dark/Light)** | Mode Gelap dan Mode Terang yang mengikuti preferensi sistem, nyaman digunakan kapan saja. |
+| 💨 | **Performa Cepat** | Menggunakan **GetX** untuk manajemen *state* yang sangat efisien dan navigasi secepat kilat. |kungan Tema (Dark/Light):** Kompatibel penuh dengan **Mode Terang** (*Light Mode*) dan **Mode Gelap** (*Dark Mode*), yang dapat mengikuti preferensi sistem pengguna.
 
 ---
 
