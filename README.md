@@ -73,4 +73,4 @@ Aplikasi ini saat ini menggunakan **Data Tiruan (Mock Data)** untuk daftar Surah
 
 | Halaman Daftar Surah | Halaman Detail Ayat | Bottom Sheet Pengaturan |
 | :---: | :---: | :---: |
-| ![Gambar Daftar Surah]([Tambahkan Tautan Gambar 1]) | ![Gambar Detail Ayat]([Tambahkan Tautan Gambar 2]) | ![Gambar Bottom Sheet Pengaturan]([Tambahkan Tautan Gambar 3]) |
+| ![]) | ![]) | ![]) |
