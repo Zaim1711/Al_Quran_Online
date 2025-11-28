@@ -1,17 +1,5 @@
-# al_quran
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# Al_Quran_Online" 
+📖 Al-Quran Digital (Al-Quran Online)Aplikasi Al-Quran Digital berbasis Flutter yang dirancang untuk memberikan pengalaman membaca, mempelajari, dan mendengarkan Al-Quran dengan fitur-fitur modern dan antarmuka pengguna (UI) yang bersih.✨ Fitur UtamaAplikasi ini dilengkapi dengan serangkaian fitur untuk mendukung kegiatan membaca dan mempelajari Al-Quran:Bacaan Arab Jelas: Menampilkan teks Al-Quran dalam huruf Arab yang mudah dibaca, menggunakan font khusus (seperti Google Fonts - Amiri).Terjemahan Indonesia: Terjemahan resmi dalam Bahasa Indonesia yang ditampilkan di bawah setiap ayat.Transliterasi (Latin): Opsi untuk menampilkan bacaan Latin untuk membantu pengucapan.Tafsir Singkat: Menyediakan Tafsir ringkas per ayat untuk pemahaman konteks dan makna.Murottal Audio: Pemutaran audio (Murottal) per ayat menggunakan just_audio untuk mendengarkan bacaan dari Qari terkemuka.Pengaturan Tampilan Dinamis: Pengguna dapat mengaktifkan atau menonaktifkan tampilan Latin, Terjemahan, dan Tafsir melalui bottom sheet pengaturan.Dukungan Tema: Kompatibel dengan mode Terang (Light Mode) dan mode Gelap (Dark Mode) yang mengikuti preferensi sistem pengguna.State Management: Menggunakan GetX untuk manajemen state yang efisien dan navigasi yang cepat.💻 Teknologi yang DigunakanFramework: Flutter (Diutamakan versi stabil terbaru)State Management: GetXAudio Playback: just_audioFont: google_fonts (Menggunakan Inter dan Amiri)🚀 Instalasi dan Jalankan ProyekUntuk menjalankan proyek ini di mesin lokal Anda, ikuti langkah-langkah berikut:PrasyaratFlutter SDK terinstal (versi 3.x.x atau lebih baru).Dart SDK.Editor pilihan (VS Code atau Android Studio).Langkah-LangkahClone Repositori:git clone [URL_REPOSITORI_ANDA]
+cd Al_Quran_Online
+Install Dependencies:flutter pub get
+Jalankan Aplikasi:Pastikan emulator atau perangkat fisik sudah terhubung.flutter run
+(Catatan: Karena aplikasi ini menggunakan just_audio (untuk Murottal), disarankan menjalankan build penuh (flutter run) daripada hanya Hot Restart setelah instalasi pertama.)🚧 Struktur Data (Mock Data)Aplikasi ini saat ini menggunakan Data Tiruan (Mock Data) untuk daftar Surah dan Ayat.Data Surah dan Ayat dimuat dari method fetchMockSurahs di QuranController.Untuk implementasi nyata, ganti method ini dengan panggilan API Al-Quran yang sesungguhnya.📸 Tampilan Aplikasi (Screenshots)(Ganti teks placeholder di bawah ini dengan tautan gambar asli Anda)Halaman Daftar SurahHalaman Detail AyatBottom Sheet Pengaturan[Tambahkan Tautan Gambar 1][Tambahkan Tautan Gambar 2][Tambahkan Tautan Gambar 3]
