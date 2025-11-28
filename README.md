@@ -1,5 +1,77 @@
-📖 Al-Quran Digital (Al-Quran Online)Aplikasi Al-Quran Digital berbasis Flutter yang dirancang untuk memberikan pengalaman membaca, mempelajari, dan mendengarkan Al-Quran dengan fitur-fitur modern dan antarmuka pengguna (UI) yang bersih.✨ Fitur UtamaAplikasi ini dilengkapi dengan serangkaian fitur untuk mendukung kegiatan membaca dan mempelajari Al-Quran:Bacaan Arab Jelas: Menampilkan teks Al-Quran dalam huruf Arab yang mudah dibaca, menggunakan font khusus (seperti Google Fonts - Amiri).Terjemahan Indonesia: Terjemahan resmi dalam Bahasa Indonesia yang ditampilkan di bawah setiap ayat.Transliterasi (Latin): Opsi untuk menampilkan bacaan Latin untuk membantu pengucapan.Tafsir Singkat: Menyediakan Tafsir ringkas per ayat untuk pemahaman konteks dan makna.Murottal Audio: Pemutaran audio (Murottal) per ayat menggunakan just_audio untuk mendengarkan bacaan dari Qari terkemuka.Pengaturan Tampilan Dinamis: Pengguna dapat mengaktifkan atau menonaktifkan tampilan Latin, Terjemahan, dan Tafsir melalui bottom sheet pengaturan.Dukungan Tema: Kompatibel dengan mode Terang (Light Mode) dan mode Gelap (Dark Mode) yang mengikuti preferensi sistem pengguna.State Management: Menggunakan GetX untuk manajemen state yang efisien dan navigasi yang cepat.💻 Teknologi yang DigunakanFramework: Flutter (Diutamakan versi stabil terbaru)State Management: GetXAudio Playback: just_audioFont: google_fonts (Menggunakan Inter dan Amiri)🚀 Instalasi dan Jalankan ProyekUntuk menjalankan proyek ini di mesin lokal Anda, ikuti langkah-langkah berikut:PrasyaratFlutter SDK terinstal (versi 3.x.x atau lebih baru).Dart SDK.Editor pilihan (VS Code atau Android Studio).Langkah-LangkahClone Repositori:git clone [URL_REPOSITORI_ANDA]
-cd Al_Quran_Online
-Install Dependencies:flutter pub get
-Jalankan Aplikasi:Pastikan emulator atau perangkat fisik sudah terhubung.flutter run
-(Catatan: Karena aplikasi ini menggunakan just_audio (untuk Murottal), disarankan menjalankan build penuh (flutter run) daripada hanya Hot Restart setelah instalasi pertama.)🚧 Struktur Data (Mock Data)Aplikasi ini saat ini menggunakan Data Tiruan (Mock Data) untuk daftar Surah dan Ayat.Data Surah dan Ayat dimuat dari method fetchMockSurahs di QuranController.Untuk implementasi nyata, ganti method ini dengan panggilan API Al-Quran yang sesungguhnya.📸 Tampilan Aplikasi (Screenshots)(Ganti teks placeholder di bawah ini dengan tautan gambar asli Anda)Halaman Daftar SurahHalaman Detail AyatBottom Sheet Pengaturan[Tambahkan Tautan Gambar 1][Tambahkan Tautan Gambar 2][Tambahkan Tautan Gambar 3]
+# 📖 Al-Quran Digital (Al-Quran Online)
+
+Aplikasi **Al-Quran Digital** modern yang dikembangkan menggunakan **Flutter**. Dirancang untuk memberikan pengalaman membaca, mempelajari, dan mendengarkan Al-Quran dengan **antarmuka pengguna (UI) yang bersih, intuitif, dan kaya fitur.**
+
+---
+
+## ✨ Fitur Utama
+
+Aplikasi ini dilengkapi dengan serangkaian fitur esensial untuk mendukung kegiatan membaca dan memahami Al-Quran:
+
+* **Bacaan Arab Jelas:** Menampilkan teks Al-Quran dalam huruf Arab yang mudah dibaca, dioptimalkan dengan *font* khusus (**Amiri**).
+* **Terjemahan Indonesia:** Menampilkan terjemahan resmi **Bahasa Indonesia** tepat di bawah setiap ayat.
+* **Transliterasi (Latin):** Opsi untuk menampilkan bacaan Latin guna membantu pengguna dalam pengucapan yang benar.
+* **Tafsir Singkat:** Menyediakan **Tafsir ringkas per ayat** untuk pemahaman cepat konteks dan makna.
+* **Murottal Audio:** Pemutaran audio (**Murottal**) per ayat menggunakan *library* `just_audio`, memungkinkan pengguna mendengarkan bacaan dari Qari terkemuka.
+* **Pengaturan Tampilan Dinamis:** Pengguna memiliki kendali penuh untuk **mengaktifkan atau menonaktifkan** tampilan Latin, Terjemahan, dan Tafsir melalui *bottom sheet* pengaturan yang mudah diakses.
+* **Dukungan Tema (Dark/Light):** Kompatibel penuh dengan **Mode Terang** (*Light Mode*) dan **Mode Gelap** (*Dark Mode*), yang dapat mengikuti preferensi sistem pengguna.
+
+---
+
+## 💻 Teknologi yang Digunakan
+
+| Kategori | Teknologi/Pustaka | Deskripsi Singkat |
+| :--- | :--- | :--- |
+| **Framework** | **Flutter** | Digunakan untuk membangun aplikasi *cross-platform* (Android, iOS, Web, dsb.) dengan satu *codebase*. |
+| **State Management** | **GetX** | Digunakan untuk manajemen *state* yang efisien, injeksi dependensi, dan navigasi yang cepat. |
+| **Audio Playback** | `just_audio` | Pustaka untuk pemutaran audio Murottal yang fleksibel dan stabil. |
+| **Font** | `google_fonts` | Menggunakan **Amiri** (untuk Arab) dan **Inter** (untuk UI). |
+
+---
+
+## 🚀 Instalasi dan Jalankan Proyek
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini di mesin lokal Anda.
+
+### Prasyarat
+
+* **Flutter SDK** terinstal (versi **3.x.x** atau lebih baru).
+* **Dart SDK**.
+* Editor pilihan (VS Code atau Android Studio).
+
+### Langkah-Langkah
+
+1.  **Clone Repositori:**
+    ```bash
+    git clone [URL_REPOSITORI_ANDA]
+    cd Al_Quran_Online
+    ```
+
+2.  **Install Dependencies:**
+    ```bash
+    flutter pub get
+    ```
+
+3.  **Jalankan Aplikasi:**
+    Pastikan *emulator* atau perangkat fisik sudah terhubung dan aktif.
+    ```bash
+    flutter run
+    ```
+    > **Catatan Penting:** Karena aplikasi ini menggunakan `just_audio` (untuk Murottal), disarankan untuk menjalankan **build penuh** (`flutter run`) daripada hanya *Hot Restart* setelah instalasi pertama untuk memastikan semua *plugin* terkompilasi dengan benar.
+
+---
+
+## 🚧 Struktur Data (Mock Data)
+
+Aplikasi ini saat ini menggunakan **Data Tiruan (Mock Data)** untuk daftar Surah dan Ayat.
+
+* Data Surah dan Ayat dimuat dari *method* `fetchMockSurahs` di `QuranController`.
+* **Untuk implementasi nyata**, Anda perlu mengganti *method* ini dengan panggilan **API Al-Quran** yang sesungguhnya (seperti API Kemenag atau sejenisnya) untuk data yang dinamis dan *up-to-date*.
+
+---
+
+## 📸 Tampilan Aplikasi (Screenshots)
+
+| Halaman Daftar Surah | Halaman Detail Ayat | Bottom Sheet Pengaturan |
+| :---: | :---: | :---: |
+| ![Gambar Daftar Surah]([Tambahkan Tautan Gambar 1]) | ![Gambar Detail Ayat]([Tambahkan Tautan Gambar 2]) | ![Gambar Bottom Sheet Pengaturan]([Tambahkan Tautan Gambar 3]) |
