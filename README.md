@@ -60,12 +60,11 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini di mesin lokal A
 
 ---
 
-## 🚧 Struktur Data (Mock Data)
+## 🚧 Struktur Data (API Kemenag)
 
-Aplikasi ini saat ini menggunakan **Data Tiruan (Mock Data)** untuk daftar Surah dan Ayat.
+Aplikasi ini saat ini menggunakan **Data (Kemenag)** untuk daftar Surah dan Ayat.
 
 * Data Surah dan Ayat dimuat dari *method* `fetchMockSurahs` di `QuranController`.
-* **Untuk implementasi nyata**, Anda perlu mengganti *method* ini dengan panggilan **API Al-Quran** yang sesungguhnya (seperti API Kemenag atau sejenisnya) untuk data yang dinamis dan *up-to-date*.
 
 ---
 
