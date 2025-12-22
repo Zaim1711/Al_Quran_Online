@@ -39,10 +39,10 @@ class IntroductionView extends GetView<IntroductionController> {
               onPressed: () => Get.offAllNamed(Routes.SURAH),
               child: Text(
                 "GET STARTED",
-                style: TextStyle(color: Get.isDarkMode ? appGreen : appWhite),
+                style: TextStyle(color: Get.isDarkMode ? appBlue : appWhite),
               ),
               style: ElevatedButton.styleFrom(
-                backgroundColor: Get.isDarkMode ? appWhite : appGreen,
+                backgroundColor: Get.isDarkMode ? appWhite : appBlue,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(50),
                 ),

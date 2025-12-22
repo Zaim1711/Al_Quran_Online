@@ -72,12 +72,12 @@ class TafsirView extends GetView<TafsirController> {
                     child: ListTile(
                       title: Text(
                         "Ayat ${tafsir.ayat}",
-                        style: TextStyle(color: appGreenDark),
+                        style: TextStyle(color: appBlueDark),
                       ),
                       subtitle: Text(
                         tafsir.teks,
                         textAlign: TextAlign.justify,
-                        style: TextStyle(color: appGreenDark),
+                        style: TextStyle(color: appBlueDark),
                       ),
                     ),
                   ),

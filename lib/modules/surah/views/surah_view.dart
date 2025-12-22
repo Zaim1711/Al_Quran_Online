@@ -99,7 +99,7 @@ class _SurahViewState extends State<SurahView> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         gradient: const LinearGradient(
-                          colors: [appGreenLight, appGreenDark],
+                          colors: [appBlueLight, appBlueDark],
                         ),
                       ),
                       child: Material(
@@ -302,7 +302,7 @@ class _SurahViewState extends State<SurahView> {
                                       style: TextStyle(
                                         color: controller.isDark.isTrue
                                             ? appWhite
-                                            : appGreenDark,
+                                            : appBlueDark,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
                                       ),
@@ -330,7 +330,7 @@ class _SurahViewState extends State<SurahView> {
                                         suffixIcon: Icon(
                                           Icons.arrow_drop_down,
                                           color: controller.isDark.isTrue
-                                              ? appGreenDark
+                                              ? appBlueDark
                                               : Colors.black,
                                         ), // Icon dropdown
                                       ),
@@ -394,7 +394,7 @@ class _SurahViewState extends State<SurahView> {
                                               }
                                             });
                                           },
-                                          style: TextStyle(color: appGreenDark),
+                                          style: TextStyle(color: appBlueDark),
                                           dropdownColor:
                                               appWhite, // Warna dropdown sesuai mode tema
                                           borderRadius: BorderRadius.circular(
@@ -576,14 +576,14 @@ class _SurahViewState extends State<SurahView> {
                                         builder: (BuildContext dialogContext) {
                                           return AlertDialog(
                                             backgroundColor: Get.isDarkMode
-                                                ? appGreenLight
+                                                ? appBlueLight
                                                 : appWhite,
                                             title: Text(
                                               "Hapus Bookmark",
                                               style: TextStyle(
                                                 color: Get.isDarkMode
                                                     ? appWhite
-                                                    : appGreenDark,
+                                                    : appBlueDark,
                                               ),
                                             ),
                                             content: Text(
@@ -591,7 +591,7 @@ class _SurahViewState extends State<SurahView> {
                                               style: TextStyle(
                                                 color: Get.isDarkMode
                                                     ? appWhite
-                                                    : appGreenDark,
+                                                    : appBlueDark,
                                               ),
                                             ),
                                             actions: [
@@ -606,7 +606,7 @@ class _SurahViewState extends State<SurahView> {
                                                   style: TextStyle(
                                                     color: Get.isDarkMode
                                                         ? appWhite
-                                                        : appGreenDark,
+                                                        : appBlueDark,
                                                   ),
                                                 ),
                                               ),
@@ -641,8 +641,8 @@ class _SurahViewState extends State<SurahView> {
                                                         ),
                                                         backgroundColor:
                                                             result["success"]
-                                                            ? appGreen
-                                                            : appGreenDark,
+                                                            ? appBlue
+                                                            : appBlueDark,
                                                         duration: Duration(
                                                           seconds: 2,
                                                         ),
@@ -660,7 +660,7 @@ class _SurahViewState extends State<SurahView> {
                                                   style: TextStyle(
                                                     color: Get.isDarkMode
                                                         ? appWhite
-                                                        : appGreen,
+                                                        : appBlue,
                                                   ),
                                                 ),
                                               ),
@@ -690,7 +690,7 @@ class _SurahViewState extends State<SurahView> {
         child: Obx(
           () => Icon(
             Icons.color_lens,
-            color: controller.isDark.isTrue ? appGreenDark : appWhite,
+            color: controller.isDark.isTrue ? appBlueDark : appWhite,
           ),
         ),
       ),

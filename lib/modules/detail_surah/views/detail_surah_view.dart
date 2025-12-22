@@ -63,7 +63,7 @@ class DetailSurahView extends GetView<DetailSurahController> {
                   margin: const EdgeInsets.only(top: 10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: appGreenLight.withOpacity(0.3),
+                    color: appBlueLight.withOpacity(0.3),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
@@ -102,11 +102,11 @@ class DetailSurahView extends GetView<DetailSurahController> {
                                           style: TextStyle(
                                             color: Get.isDarkMode
                                                 ? appWhite
-                                                : appGreen,
+                                                : appBlue,
                                           ),
                                         ),
                                         backgroundColor: Get.isDarkMode
-                                            ? appGreen
+                                            ? appBlue
                                             : appWhite,
                                         content: Text("Pilih jenis bookmark"),
                                         actions: [
@@ -156,7 +156,7 @@ class DetailSurahView extends GetView<DetailSurahController> {
                                               style: TextStyle(
                                                 color: Get.isDarkMode
                                                     ? appWhite
-                                                    : appGreen,
+                                                    : appBlue,
                                               ),
                                             ),
                                           ),
@@ -186,8 +186,8 @@ class DetailSurahView extends GetView<DetailSurahController> {
                                                   ),
                                                   backgroundColor:
                                                       result["success"]
-                                                      ? appGreen
-                                                      : appGreenLight,
+                                                      ? appBlue
+                                                      : appBlueLight,
                                                   duration: Duration(
                                                     seconds: 2,
                                                   ),
@@ -199,7 +199,7 @@ class DetailSurahView extends GetView<DetailSurahController> {
                                               style: TextStyle(
                                                 color: Get.isDarkMode
                                                     ? appWhite
-                                                    : appGreen,
+                                                    : appBlue,
                                               ),
                                             ),
                                           ),
@@ -296,7 +296,7 @@ class DetailSurahView extends GetView<DetailSurahController> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       gradient: const LinearGradient(
-                        colors: [appGreenLight, appGreenDark],
+                        colors: [appBlueLight, appBlueDark],
                       ),
                     ),
                     child: Padding(
