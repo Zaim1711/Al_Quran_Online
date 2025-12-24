@@ -36,7 +36,7 @@ class IntroductionView extends GetView<IntroductionController> {
             ),
             const SizedBox(height: 40),
             ElevatedButton(
-              onPressed: () => Get.offAllNamed(Routes.SURAH),
+              onPressed: () => Get.offAllNamed(Routes.JadwalSholatView),
               child: Text(
                 "GET STARTED",
                 style: TextStyle(color: Get.isDarkMode ? appBlue : appWhite),

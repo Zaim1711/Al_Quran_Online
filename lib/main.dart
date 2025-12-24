@@ -12,7 +12,9 @@ void main() async {
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: box.read("appDark") == null ? appLight : appDark,
+      theme: appLight,
+      darkTheme: appDark,
+      themeMode: ThemeMode.dark,
       title: "Application",
       initialRoute: Routes.INTRODUCTION,
       getPages: AppPages.routes,

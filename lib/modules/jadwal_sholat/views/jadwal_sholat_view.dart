@@ -1,5 +1,6 @@
 import 'package:al_quran/constants/color.dart';
 import 'package:al_quran/modules/jadwal_sholat/controllers/jadwal_sholat_controller.dart';
+import 'package:al_quran/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
@@ -30,11 +31,12 @@ class _JadwalSholatViewState extends State<JadwalSholatView> {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [appBlueLight, appBlueDark],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
+          color: appBlueDark,
+          // gradient: LinearGradient(
+          //   colors: [appBlueLight, appBlueDark],
+          //   begin: Alignment.topCenter,
+          //   end: Alignment.bottomCenter,
+          // ),
         ),
         child: SafeArea(
           child: ListView(
@@ -65,7 +67,7 @@ class _JadwalSholatViewState extends State<JadwalSholatView> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const Text(
-            "Jadwal Sholat",
+            "Assalamu'alaikum",
             style: TextStyle(
               color: appWhite,
               fontSize: 24,
@@ -121,14 +123,11 @@ class _JadwalSholatViewState extends State<JadwalSholatView> {
         child: Stack(
           children: [
             Positioned(
-              right: -20,
+              right: 10,
               top: 10,
               child: Opacity(
                 opacity: 0.85,
-                child: Image.asset(
-                  "assets/images/Alquran_images.png",
-                  width: 140,
-                ),
+                child: Image.asset("assets/images/Pray.png", width: 140),
               ),
             ),
             Column(
@@ -138,15 +137,12 @@ class _JadwalSholatViewState extends State<JadwalSholatView> {
                   onTap: controller.getLocation,
                   child: Row(
                     children: [
-                      const Icon(Icons.location_on, color: appYellow, size: 18),
+                      const Icon(Icons.location_on, color: appWhite, size: 18),
                       const SizedBox(width: 6),
                       Obx(
                         () => Text(
                           controller.locationName.value,
-                          style: const TextStyle(
-                            color: appYellow,
-                            fontSize: 14,
-                          ),
+                          style: const TextStyle(color: appWhite, fontSize: 14),
                         ),
                       ),
                     ],
@@ -173,7 +169,7 @@ class _JadwalSholatViewState extends State<JadwalSholatView> {
                     vertical: 8,
                   ),
                   decoration: BoxDecoration(
-                    color: appYellow,
+                    color: appWhite,
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Text(
@@ -198,9 +194,21 @@ class _JadwalSholatViewState extends State<JadwalSholatView> {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: const [
-          _MenuItem(title: "Al'Quran", icon: Icons.menu_book),
-          _MenuItem(title: "Murottal", icon: Icons.headphones),
+        children: [
+          _MenuItem(
+            title: "Al'Quran",
+            icon: Icons.menu_book,
+            onTap: () {
+              Get.toNamed(Routes.SURAH);
+            },
+          ),
+          _MenuItem(
+            title: "Murottal",
+            icon: Icons.headphones,
+            onTap: () {
+              Get.toNamed(Routes.SURAH);
+            },
+          ),
           _MenuItem(title: "Tafsir", icon: Icons.book),
         ],
       ),
@@ -225,7 +233,7 @@ class _JadwalSholatViewState extends State<JadwalSholatView> {
         {
           'name': 'Dhuhr',
           'time': data.dhuhr,
-          'icon': Icons.wb_sunny,
+          'icon': Icons.wb_sunny_outlined,
           'description':
               'Sholat di waktu tengah hari setelah matahari tergelincir.',
         },
@@ -255,14 +263,13 @@ class _JadwalSholatViewState extends State<JadwalSholatView> {
       return Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: ClipRRect(
-          // 🔥 WAJIB
           borderRadius: BorderRadius.circular(28),
           child: Container(
             decoration: BoxDecoration(
               gradient: const LinearGradient(
                 colors: [
-                  Color(0xFFFFE082), // kuning muda
-                  Color(0xFFFFD54F), // kuning tua
+                  appYellowLight, // kuning muda
+                  appWhite, // kuning tua
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -292,16 +299,16 @@ class _JadwalSholatViewState extends State<JadwalSholatView> {
                   decoration: isCurrent
                       ? BoxDecoration(
                           color: appWhite.withOpacity(0.6),
-                          border: const Border(
-                            left: BorderSide(color: appBlueDark, width: 4),
-                          ),
+                          // border: const Border(
+                          //   left: BorderSide(color: appBlueDark, width: 0),
+                          // ),
                         )
                       : const BoxDecoration(), // WAJIB supaya tidak null
                   padding: const EdgeInsets.symmetric(vertical: 6),
                   child: ListTile(
                     contentPadding: const EdgeInsets.symmetric(
-                      horizontal: 14,
-                      vertical: 4,
+                      horizontal: 16,
+                      vertical: 2,
                     ),
                     minLeadingWidth: 24,
                     horizontalTitleGap: 8,
@@ -352,25 +359,50 @@ class _JadwalSholatViewState extends State<JadwalSholatView> {
 class _MenuItem extends StatelessWidget {
   final String title;
   final IconData icon;
+  final VoidCallback? onTap;
 
-  const _MenuItem({required this.title, required this.icon});
+  const _MenuItem({
+    required this.title,
+    required this.icon,
+    this.onTap,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 90,
-      height: 90,
-      decoration: BoxDecoration(
-        color: appBlueDark,
+    return Material(
+      color: Colors.transparent,
+      borderRadius: BorderRadius.circular(18),
+      child: InkWell(
         borderRadius: BorderRadius.circular(18),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(icon, color: appYellow, size: 32),
-          const SizedBox(height: 8),
-          Text(title, style: const TextStyle(color: appWhite, fontSize: 12)),
-        ],
+        onTap: onTap,
+        child: Container(
+          width: 90,
+          height: 90,
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              colors: [appBlueLight, appBlueDark],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            borderRadius: BorderRadius.circular(18),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(icon, color: appWhite, size: 32),
+              const SizedBox(height: 8),
+              Text(
+                title,
+                style: const TextStyle(
+                  color: appWhite,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

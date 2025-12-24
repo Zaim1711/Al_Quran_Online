@@ -106,7 +106,7 @@ class DetailSurahView extends GetView<DetailSurahController> {
                                           ),
                                         ),
                                         backgroundColor: Get.isDarkMode
-                                            ? appBlue
+                                            ? appBlueLight
                                             : appWhite,
                                         content: Text("Pilih jenis bookmark"),
                                         actions: [
@@ -133,12 +133,12 @@ class DetailSurahView extends GetView<DetailSurahController> {
                                                   content: Text(
                                                     result["message"],
                                                     style: TextStyle(
-                                                      color: appWhite,
+                                                      color: appBlueDark,
                                                     ),
                                                   ),
                                                   backgroundColor:
                                                       result["success"]
-                                                      ? appOrange
+                                                      ? appYellow
                                                       : const Color.fromARGB(
                                                           255,
                                                           255,

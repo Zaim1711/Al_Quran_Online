@@ -62,11 +62,6 @@ class _SurahViewState extends State<SurahView> {
             icon: const Icon(Icons.search),
             color: appWhite,
           ),
-          IconButton(
-            onPressed: () => Get.toNamed(Routes.JadwalSholatView),
-            icon: const Icon(Icons.schedule),
-            color: appWhite,
-          ),
         ],
       ),
       body: DefaultTabController(
@@ -109,20 +104,27 @@ class _SurahViewState extends State<SurahView> {
                           onLongPress: () {
                             if (lastRead != null) {
                               Get.defaultDialog(
+                                backgroundColor: appBlueLight,
                                 title: "Hapus Terakhir dibaca",
                                 middleText:
                                     "Apakah anda yakin untuk menghapus?",
                                 actions: [
                                   OutlinedButton(
                                     onPressed: () => Get.back(),
-                                    child: Text("CANCEL"),
+                                    child: Text(
+                                      "CANCEL",
+                                      style: TextStyle(color: appWhite),
+                                    ),
                                   ),
                                   ElevatedButton(
                                     onPressed: () {
                                       c.deleteBookmark(lastRead['id']);
                                       Get.back(); // Close dialog after deleting
                                     },
-                                    child: Text("DELETE"),
+                                    child: Text(
+                                      "DELETE",
+                                      style: TextStyle(color: appWhite),
+                                    ),
                                   ),
                                 ],
                               );
@@ -685,15 +687,15 @@ class _SurahViewState extends State<SurahView> {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => controller.changeThemeMode(),
-        child: Obx(
-          () => Icon(
-            Icons.color_lens,
-            color: controller.isDark.isTrue ? appBlueDark : appWhite,
-          ),
-        ),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () => controller.changeThemeMode(),
+      //   child: Obx(
+      //     () => Icon(
+      //       Icons.color_lens,
+      //       color: controller.isDark.isTrue ? appBlueDark : appWhite,
+      //     ),
+      //   ),
+      // ),
     );
   }
 }

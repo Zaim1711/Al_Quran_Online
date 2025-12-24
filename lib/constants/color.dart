@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 const Color appBlue = Color(0xFF030F2C);
 const Color appBlueDark = Color(0xFF131927);
 const Color appBlueLight = Color(0xff2F4372);
+const Color appYellowLight = Color.fromARGB(255, 245, 228, 162);
 const Color appYellow = Color(0xffE7D37F);
 const Color appOrange = Color(0xffFD9B63);
 const Color appWhite = Color.fromRGBO(254, 251, 251, 0.991);
